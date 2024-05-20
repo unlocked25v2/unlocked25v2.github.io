@@ -1,5 +1,3 @@
-/* css/styles.css */
-
 @import url('https://fonts.googleapis.com/css2?family=Teachers&display=swap');
 
 body {
@@ -31,6 +29,25 @@ header, main, footer {
     z-index: 1;
 }
 
+.alert-banner {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.alert-banner.hidden {
+    display: none;
+}
+
+body {
+    margin-top: 0px;
+}
+
 header {
     background-color: #222222;
     color: white;
@@ -40,9 +57,25 @@ header {
     align-items: center;
     position: fixed;
     width: 100%;
-    top: 0;
+    top: 0px;
     z-index: 1000;
 }
+
+body.announcement-active {
+    margin-top: 40px;
+}
+
+body.announcement-active header {
+    top: 40px;
+}
+
+/* .show-alert-banner body {
+    margin-top: 40px;
+}
+
+.show-alert-banner header {
+    top: 40px;
+} */
 
 .navbar {
     display: flex;
@@ -148,7 +181,7 @@ main {
 footer {
     background-color: #222222;
     color: white;
-    padding: 1rem 0;
+    padding: 0rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
