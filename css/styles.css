@@ -1,0 +1,244 @@
+/* css/styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Teachers&display=swap');
+
+body {
+    font-family: 'Teachers', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../img/background.png');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: blur(3px);
+    transform: scale(1.02);
+}
+
+header, main, footer {
+    position: relative;
+    z-index: 1;
+}
+
+header {
+    background-color: #222222;
+    color: white;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1700px;
+}
+
+.website-name {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 35px;
+}
+
+.website-name a {
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.search-bar {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search-bar input {
+    font-family: 'Teachers', Arial, sans-serif;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+    font-family: 'Teachers', Arial, sans-serif;
+    padding: 0.5rem;
+    border: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+main {
+    padding: 6rem 2rem 2rem 2rem;
+    text-align: center;
+}
+
+.game-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.game-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.game-button img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.game-button button {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #222222;
+    color: white;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.footer-whole {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1700px;
+}
+
+.footer-left  {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-right a {
+    color: white;
+    text-decoration: none;
+}
+
+.error-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+.error-page img {
+    width: 50%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.error-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.error-page p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+.error-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.error-link {
+    padding: 0.75rem 1.5rem;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.error-link:hover {
+    background-color: #555;
+}
+
+.game-iframe {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.game-iframe-container {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.game {
+    border-radius: 15px;
+    overflow: hidden;
+}
