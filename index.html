@@ -16,15 +16,17 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="categories/2-player.html">2 Player</a></li>
-                    <li><a href="categories/puzzle.html">Puzzle</a></li>
+                    <li><a href="categories/skill.html">Skill</a></li>
                     <li><a href="categories/sports.html">Sports</a></li>
-                    <li><a href="categories/shooting.html">Shooting</a></li>
+                    <li><a href="categories/puzzle.html">Puzzle</a></li>
+                    <li><a href="categories/allgames.html">All</a></li>
                 </ul>
             </nav>
             <div class="search-bar">
-                <input type="text" placeholder="Search...">
-                <button type="button">Search</button>
+                <input type="text" id="search-input" placeholder="Search...">
+                <button type="button" id="search-button">Search</button>
             </div>
+            <div id="results"></div>
         </div>
     </header>
 
@@ -68,8 +70,47 @@
                 <img onclick="window.location.href='/games/snow-rider-3d.html'" src="img/gameimg/snow-rider-3d.png" alt="Snow Rider 3D">
                 <button onclick="window.location.href='/games/snow-rider-3d.html'">Snow Rider 3D</button>
             </div>
-            
         </div>
+        <h2>New and Popular Games</h2>
+            <div class="game-grid">
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/1v1-lol.html'" src="img/gameimg/1v1-lol.png" alt="1v1 LOL">
+                    <button onclick="window.location.href='/games/1v1-lol.html'">1v1 LOL</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/8-ball-pool.html'" src="img/gameimg/8-ball-pool.png" alt="8 Ball Pool">
+                    <button onclick="window.location.href='/games/8-ball-pool.html'">8 Ball Pool</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/stick-merge.html'" src="img/gameimg/stick-merge.png" alt="Stick Merge">
+                    <button onclick="window.location.href='/games/a.html'">Stick Merge</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/stacktris.html'" src="img/gameimg/stacktris.png" alt="Stacktris">
+                    <button onclick="window.location.href='/games/stacktris.html'">Stacktris</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/jetpack-joyride.html'" src="img/gameimg/jetpack-joyride.png" alt="Jetpack Joyride">
+                    <button onclick="window.location.href='/games/jetpack-joyride.html'">Jetpack Joyride</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/soccer-skills-world-cup.html'" src="img/gameimg/soccer-skills-world-cup.png" alt="Soccer Skills World Cup">
+                    <button onclick="window.location.href='/games/soccer-skills-world-cup.html'">Soccer Skills WC</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/stickman-hook.html'" src="img/gameimg/stickman-hook.png" alt="Stickman Hook">
+                    <button onclick="window.location.href='/games/stickman-hook.html'">Stickman Hook</button>
+                </div>
+
+            </div>
+        </main>
     </main>
 
 <!-- WEBSITE MAIN CONTENT FINISHED -->
@@ -85,5 +126,6 @@
         </div>
     </footer>
     <script src="../js/alert-banner.js"></script>
+<!--    <script src="../js/search.js"></script> -->
 </body>
 </html>

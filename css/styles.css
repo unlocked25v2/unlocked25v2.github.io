@@ -40,10 +40,6 @@ header, main, footer {
     z-index: 1000;
 }
 
-.alert-banner.hidden {
-    display: none;
-}
-
 body {
     margin-top: 0px;
 }
@@ -68,14 +64,6 @@ body.announcement-active {
 body.announcement-active header {
     top: 40px;
 }
-
-/* .show-alert-banner body {
-    margin-top: 40px;
-}
-
-.show-alert-banner header {
-    top: 40px;
-} */
 
 .navbar {
     display: flex;
@@ -143,7 +131,7 @@ nav ul li a {
 }
 
 main {
-    padding: 6rem 2rem 2rem 2rem;
+    padding: 6rem 2rem 4rem 2rem;
     text-align: center;
 }
 
@@ -181,13 +169,11 @@ main {
 footer {
     background-color: #222222;
     color: white;
-    padding: 0rem 0;
+    padding: 0rem 0; 
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
     width: 100%;
-    bottom: 0;
     z-index: 1000;
 }
 
