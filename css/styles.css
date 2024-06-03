@@ -14,6 +14,12 @@ body {
     position: relative;
 }
 
+p {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    line-height: 0.5; /* Adjust line height as needed */
+}
+
 body::before {
     content: "";
     position: fixed;
