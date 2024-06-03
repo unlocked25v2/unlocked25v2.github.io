@@ -3,23 +3,317 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">
+    <meta name="google-site-verification" content="27Ht117roeMJBN5ooolqDA0V4EkupFW2KMR-6xuKzoY" />
     <title>Unlocked24</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <header>
+        <div class="navbar">
+            <div class="website-name">
+              <a href="/"><strong>Unlocked24</strong></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../categories/2-player.html">2 Player</a></li>
+                    <li><a href="../categories/skill.html">Skill</a></li>
+                    <li><a href="../categories/sports.html">Sports</a></li>
+                    <li><a href="../categories/puzzle.html">Puzzle</a></li>
+                    <li><a href="../categories/allgames.html">All</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search...">
+                <button type="button" id="search-button">Search</button>
+            </div>
+            <div id="results"></div>
+        </div>
+    </header>
+
+<!-- WEBSITE MAIN CONTENT HERE -->
+    
     <main>
-        <div class="error-page">
-            <img src="/img/404.png" alt="404 Not Found">
-            <h1>Technical Difficulties</h1>
-            <p>It looks likes majority of games are not working, or have been blocked.</p>
-            <p>I am looking for a fix, but as of right now I am unsure if I can fix it.</p>
-            <p>If you want to try your luck, click the link below to go to the games page.</p>
-            <p>Otherwise, you might have to use a hotspot to play games. Sorry for the inconvenience.</p>
-            <div class="error-links">
-                <a href="../index1.html" class="error-link">Back to Games Page</a>
+        <h2>Featured Games</h2>
+        <div class="game-grid">
+            
+            <div class="game-button">
+                <img onclick="window.location.href='/games/basketball-stars.html'" src="img/gameimg/basketball-stars.png" alt="Basketball Stars">
+                <button onclick="window.location.href='/games/basketball-stars.html'">Basketball Stars</button>
+            </div>
+            
+            <div class="game-button">
+                <img onclick="window.location.href='/games/drive-mad.html'" src="img/gameimg/drive-mad.png" alt="Drive Mad">
+                <button onclick="window.location.href='/games/drive-mad.html'">Drive Mad</button>
+            </div>
+            
+            <div class="game-button">
+                <img onclick="window.location.href='/games/blumgi-slime.html'" src="img/gameimg/blumgi-slime.png" alt="Blumgi Slime">
+                <button onclick="window.location.href='/games/blumgi-slime.html'">Blumgi Slime</button>
+            </div>
+            
+            <div class="game-button">
+                <img onclick="window.location.href='/games/moto-x3m.html'" src="img/gameimg/moto-x3m.png" alt="Moto X3M">
+                <button onclick="window.location.href='/games/moto-x3m.html'">Moto X3M</button>
+            </div>
+            
+            <div class="game-button">
+                <img onclick="window.location.href='/games/slope.html'" src="img/gameimg/slope.png" alt="Slope">
+                <button onclick="window.location.href='/games/slope.html'">Slope</button>
+            </div>
+            
+            <div class="game-button">
+                <img onclick="window.location.href='/games/fireboy-watergirl-1.html'" src="img/gameimg/fireboy-watergirl-1.png" alt="Fireboy and Watergirl 1: Forest Temple">
+                <button onclick="window.location.href='/games/fireboy-watergirl-1.html'">Fireboy Watergirl 1</button>
+            </div>
+            
+            <div class="game-button">
+                <img onclick="window.location.href='/games/snow-rider-3d.html'" src="img/gameimg/snow-rider-3d.png" alt="Snow Rider 3D">
+                <button onclick="window.location.href='/games/snow-rider-3d.html'">Snow Rider 3D</button>
             </div>
         </div>
+        <h2>New and Popular Games</h2>
+            <div class="game-grid">
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/1v1-lol.html'" src="img/gameimg/1v1-lol.png" alt="1v1 LOL">
+                    <button onclick="window.location.href='/games/1v1-lol.html'">1v1 LOL</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/8-ball-pool.html'" src="img/gameimg/8-ball-pool.png" alt="8 Ball Pool">
+                    <button onclick="window.location.href='/games/8-ball-pool.html'">8 Ball Pool</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/stick-merge.html'" src="img/gameimg/stick-merge.png" alt="Stick Merge">
+                    <button onclick="window.location.href='/games/stick-merge.html'">Stick Merge</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/stacktris.html'" src="img/gameimg/stacktris.png" alt="Stacktris">
+                    <button onclick="window.location.href='/games/stacktris.html'">Stacktris</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/jetpack-joyride.html'" src="img/gameimg/jetpack-joyride.png" alt="Jetpack Joyride">
+                    <button onclick="window.location.href='/games/jetpack-joyride.html'">Jetpack Joyride</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/soccer-skills-world-cup.html'" src="img/gameimg/soccer-skills-world-cup.png" alt="Soccer Skills World Cup">
+                    <button onclick="window.location.href='/games/soccer-skills-world-cup.html'">Soccer Skills WC</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/stickman-hook.html'" src="img/gameimg/stickman-hook.png" alt="Stickman Hook">
+                    <button onclick="window.location.href='/games/stickman-hook.html'">Stickman Hook</button>
+                </div>
+
+
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/golf-champions.html'" src="img/gameimg/golf-champions.png" alt="Golf Champions">
+                    <button onclick="window.location.href='/games/golf-champions.html'">Golf Champions</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/tag.html'" src="img/gameimg/tag.png" alt="Tag">
+                    <button onclick="window.location.href='/games/tag.html'">Tag</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/head-soccer.html'" src="img/gameimg/head-soccer.png" alt="Head Soccer">
+                    <button onclick="window.location.href='/games/head-soccer.html'">Head Soccer</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/drift-boss.html'" src="img/gameimg/drift-boss.png" alt="Drift Boss">
+                    <button onclick="window.location.href='/games/drift-boss.html'">Drift Boss</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/bitlife.html'" src="img/gameimg/bitlife.png" alt="Bitlife">
+                    <button onclick="window.location.href='/games/bitlife.html'">BitLife</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/stack.html'" src="img/gameimg/stack.png" alt="Stack">
+                    <button onclick="window.location.href='/games/stack'">Stack</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/ledge-throw.html'" src="img/gameimg/ledge-throw.png" alt="Ledge Throw">
+                    <button onclick="window.location.href='/games/ledge-throw.html'">Ledge Throw</button>
+                </div>
+
+
+
+                
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/subway-surfers-beijing.html'" src="img/gameimg/subway-surfers-beijing.png" alt="Subway Surfers Beijing">
+                    <button onclick="window.location.href='/games/subway-surfers-beijing.html'">Subway Surfers</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/monkey-mart.html'" src="img/gameimg/monkey-mart.png" alt="Monkey Mart">
+                    <button onclick="window.location.href='/games/monkey-mart.html'">Monkey Mart</button>
+                </div>
+                
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/jump-and-hover.html'" src="img/gameimg/jump-and-hover.png" alt="Jump and Hover">
+                    <button onclick="window.location.href='/games/jump-and-hover.html'">Jump and Hover</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/blumgi-rocket.html'" src="img/gameimg/blumgi-rocket.png" alt="Blumgi Rocket">
+                    <button onclick="window.location.href='/games/blumgi-rocket.html'">Blumgi Rocket</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/idle-ants.html'" src="img/gameimg/idle-ants.png" alt="Idle Ants">
+                    <button onclick="window.location.href='/games/idle-ants.html'">Idle Ants</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/paper-io-2.html'" src="img/gameimg/paper-io-2.png" alt="Paper Io 2">
+                    <button onclick="window.location.href='/games/paper-io-2.html'">Paper Io 2</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/tomb-of-the-mask.html'" src="img/gameimg/tomb-of-the-mask.png" alt="Tomb Of The Mask">
+                    <button onclick="window.location.href='/games/tomb-of-the-mask.html'">Tomb of The Mask</button>
+                </div>
+
+
+
+                
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/vex-7.html'" src="img/gameimg/vex-7.png" alt="Vex 7">
+                    <button onclick="window.location.href='/games/vex-7.html'">Vex 7</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/there-is-no-game.html'" src="img/gameimg/there-is-no-game.png" alt="There Is No Game">
+                    <button onclick="window.location.href='/games/there-is-no-game.html'">There Is No Game</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/wordle-unlimited.html'" src="img/gameimg/wordle-unlimited.png" alt="Wordle Unlimited">
+                    <button onclick="window.location.href='/games/wordle-unlimited.html'">Wordle Unlimited</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/parking-fury.html'" src="img/gameimg/parking-fury.png" alt="Parking Fury">
+                    <button onclick="window.location.href='/games/parking-fury.html'">Parking Fury</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/crossy-road.html'" src="img/gameimg/crossy-road.png" alt="Crossy Road">
+                    <button onclick="window.location.href='/games/crossy-road.html'">Crossy Road</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/hop-warp.html'" src="img/gameimg/hop-warp.png" alt="Hop Warp">
+                    <button onclick="window.location.href='/games/hop-warp.html'">Hop Warp</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/idle-startup-tycoon.html'" src="img/gameimg/idle-startup-tycoon.png" alt="Idle Startup Tycoon">
+                    <button onclick="window.location.href='/games/idle-startup-tycoon.html'">Idle Startup Tycoon</button>
+                </div>
+
+
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/retro-bowl.html'" src="img/gameimg/retro-bowl.png" alt="Retro Bowl">
+                    <button onclick="window.location.href='/games/retro-bowl.html'">Retro Bowl</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/super-star-car.html'" src="img/gameimg/super-star-car.png" alt="Super Star Car">
+                    <button onclick="window.location.href='/games/super-star-car.html'">Super Star Car</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/jumping-shell.html'" src="img/gameimg/jumping-shell.png" alt="Jumping Shell"">
+                    <button onclick="window.location.href='/games/jumping-shell.html'">Jumping Shell</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/archery-world-tour.html'" src="img/gameimg/archery-world-tour.png" alt="Archery World Tour">
+                    <button onclick="window.location.href='/games/archery-world-tour.html'">Archery World Tour</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/tiny-fishing.html'" src="img/gameimg/tiny-fishing.png" alt="Tiny Fishing">
+                    <button onclick="window.location.href='/games/tiny-fishing.html'">Tiny Fishing</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/bloxorz.html'" src="img/gameimg/bloxorz.png" alt="Bloxorz">
+                    <button onclick="window.location.href='/games/bloxorz.html'">Bloxorz</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/ape-sling.html'" src="img/gameimg/ape-sling.png" alt="Ape Sling">
+                    <button onclick="window.location.href='/games/ape-sling.html'">Ape Sling</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/getaway-shootout.html'" src="img/gameimg/getaway-shootout.png" alt="Getaway Shootout">
+                    <button onclick="window.location.href='/games/getaway-shootout.html'">Getaway Shootout</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/gunspin.html'" src="img/gameimg/gunspin.png" alt="Gunspin">
+                    <button onclick="window.location.href='/games/gunspin.html'">Gunspin</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/idle-gold-miner.html'" src="img/gameimg/idle-gold-miner.png" alt="Idle Gold Miner">
+                    <button onclick="window.location.href='/games/idle-gold-miner.html'">Idle Gold Miner</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/merge-party.html'" src="img/gameimg/merge-party.png" alt="Merge Party">
+                    <button onclick="window.location.href='/games/merge-party.html'">Merge Party</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/plactions.html'" src="img/gameimg/plactions.png" alt="Plactions">
+                    <button onclick="window.location.href='/games/plactions.html'">Plactions</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/sling-drift.html'" src="img/gameimg/sling-drift.png" alt="Sling Drift">
+                    <button onclick="window.location.href='/games/sling-drift.html'">Sling Drift</button>
+                </div>
+
+                <div class="game-button">
+                    <img onclick="window.location.href='/games/perfect-peel.html'" src="img/gameimg/perfect-peel.png" alt="Perfect Peel">
+                    <button onclick="window.location.href='/games/perfect-peel.html'">Perfect Peel</button>
+                </div>
+
+
+                
+            </div>
+        </main>
     </main>
+
+<!-- WEBSITE MAIN CONTENT FINISHED -->
+    
+    <footer>
+        <div class="footer-whole">
+            <div class="footer-left">
+                <p>Version Unreleased</p>
+            </div>
+            <div class="footer-right">
+                <a href="../request.html">Request a Game</a>
+            </div>
+        </div>
+    </footer>
     <script src="../js/alert-banner.js"></script>
+<!--    <script src="../js/search.js"></script> -->
 </body>
 </html>
