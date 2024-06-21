@@ -275,3 +275,10 @@ footer {
     border-radius: 15px;
     overflow: hidden;
 }
+
+.swf-game-frame {
+    width: 775px;
+    height: 460px;
+    border: 1px solid #000;
+    margin: 0 auto;
+}
