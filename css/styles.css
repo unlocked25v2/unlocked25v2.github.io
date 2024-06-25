@@ -17,7 +17,7 @@ body {
 p {
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
-    line-height: 0.5; /* Adjust line height as needed */
+    line-height: 1; /* Adjust line height as needed */
 }
 
 body::before {
@@ -153,6 +153,8 @@ main {
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
+    max-width: 1200px; /* Adjust the max-width as needed */
+    margin: 0 auto; /* Center the game grid */
 }
 
 .game-button {
@@ -281,4 +283,25 @@ footer {
     height: 460px;
     border: 1px solid #000;
     margin: 0 auto;
+}
+
+.resize-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 20%;
+    z-index: 9999;
+}
+
+@media screen and (max-width: 1227px) {
+    .resize-overlay {
+        display: block;
+    }
 }
