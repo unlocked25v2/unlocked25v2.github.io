@@ -218,6 +218,11 @@ footer {
     text-decoration: none;
 }
 
+.footer-left a {
+    color: white;
+    text-decoration: none;
+}
+
 .error-page {
     display: flex;
     flex-direction: column;
@@ -300,8 +305,74 @@ footer {
     z-index: 9999;
 }
 
+.resize-overlay .smaller-text {
+    font-size: 0.8em; /* Adjust the font size as needed */
+    margin-top: 10px; /* Optional: add some space above the text */
+}
+
+
 @media screen and (max-width: 1227px) {
     .resize-overlay {
         display: block;
     }
+}
+
+.update-log {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.update-log .update-entry {
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    padding: 10px 20px; /* Adjusted padding for smaller box when collapsed */
+    margin-bottom: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.update-log .update-content {
+    display: none; /* Collapsed by default */
+    padding-top: 10px;
+}
+
+.update-log .update-entry.active .update-content {
+    display: block; /* Expanded when active */
+    padding-top: 10px; /* Padding for content when expanded */
+}
+
+.update-log .update-entry.active {
+    padding-bottom: 20px; /* Additional padding for expanded state */
+}
+
+.update-log h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.update-log h2 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+    line-height: 1.2; /* Adjusted line height */
+}
+
+.update-log ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.update-log .arrow {
+    font-size: 1.2em; /* Slightly smaller arrow */
+    transition: transform 0.3s ease;
+    user-select: none; /* Prevent arrow from being highlighted */
+}
+
+.update-log .update-entry.active .arrow {
+    transform: rotate(90deg); /* Rotate arrow when active */
 }
