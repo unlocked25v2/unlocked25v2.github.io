@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Page</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative; /* Position relative for absolute positioning of the blur */
+            overflow: hidden; /* Prevent scrollbars from appearing */
+            background-color: #000; /* Fallback color to prevent white space */
+        }
+
+        /* Background blur effect */
+        #background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('../img/overlay-bg.png');
+            background-size: cover; /* Ensure the image covers the entire area */
+            background-position: center; /* Center the image */
+            filter: blur(8px); /* Apply blur effect to the background */
+            z-index: -1; /* Send behind the other elements */
+        }
+
+        #logo {
+            width: 300px; /* Set logo width to make it smaller */
+            margin-bottom: 20px; /* Space between logo and loading bar */
+            z-index: 1; /* Ensure logo is above the background */
+            position: relative; /* For proper stacking context */
+        }
+
+        #loading-bar-container {
+            width: 300px; /* Width of the loading bar container */
+            height: 20px; /* Height of the loading bar */
+            background-color: #1d1d1d; /* Background color of the loading bar container */
+            border-radius: 5px; /* Slightly rounded corners */
+            overflow: hidden;
+            position: relative; /* Position relative for the loading bar */
+            z-index: 1; /* Ensure loading bar is above the background */
+        }
+
+        #loading-bar {
+            width: 0%;
+            height: 100%; /* Fill the height of the container */
+            background-color: #3f3f3f; /* Loading bar color */
+            transition: width 10s; /* Duration of loading animation */
+            position: absolute; /* Position absolute for animation */
+            bottom: 0; /* Start from the bottom */
+        }
+    </style>
+</head>
+<body>
+    <div id="background"></div> <!-- Background div for the overlay -->
+    <img id="logo" src="../img/logo.png" alt="Logo" />
+
+    <div id="loading-bar-container">
+        <div id="loading-bar"></div>
+    </div>
+
+    <script>
+        // Start the loading bar animation
+        window.onload = function() {
+            document.getElementById('loading-bar').style.width = '100%';
+        };
+    </script>
+</body>
+</html>

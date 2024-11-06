@@ -15,6 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UL24 - Papa's Wingeria</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" type="image/ico" href="/img/favicon.ico"/>
 </head>
 
 <body>
@@ -44,8 +45,9 @@
     <!-- WEBSITE MAIN CONTENT HERE -->
     <main>
         <div class='game-container'>
-            <embed src="/swf/papas-wingeria.swf" width="775" height="460"></embed>
+            <embed class="game-iframe" id="game-area" src="/swf/papas-wingeria.swf" width="775" height="460"></embed>
         </div>
+        <button class="fullscreen-button" id="fullscreen-btn" onclick="toggleFullscreen()">Fullscreen</button>
     </main>
 
 
@@ -63,6 +65,8 @@
     </footer>
     <script src="../js/alert-banner.js"></script>
     <script src="../js/browser-check.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/fullscreen.js"></script>
     <script src="/ruffle/ruffle.js"></script>
 </body>
 
