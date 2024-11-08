@@ -1,4 +1,4 @@
-﻿Abdullah
+Abdullah
 Abernathy
 Aboushi
 Abram
@@ -1276,7 +1276,6 @@ Njoku
 Nnadi
 Nordin
 Norman
-Normus
 Norton
 Norwell
 Norwood
@@ -1502,6 +1501,7 @@ Rowe
 Roy
 Ruble
 Rudolph
+Ruggs
 Ruiz
 Runyan
 Rush

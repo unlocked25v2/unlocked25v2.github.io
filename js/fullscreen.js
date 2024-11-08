@@ -6,7 +6,7 @@ window.addEventListener("load", function() {
     const path = window.location.pathname;
     const isInGamesFolder = path.includes("/games/");
 
-    const delay = isInGamesFolder ? 12000 : 0;
+    const delay = isInGamesFolder ? 6000 : 0;
 
     setTimeout(() => {
         console.log(`Showing fullscreen button after ${delay / 1000} seconds.`);
