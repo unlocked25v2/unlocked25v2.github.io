@@ -456,3 +456,13 @@ footer {
     border-radius: 5px;
     display: block; 
 }
+
+.game-alert-button {
+    position: relative;
+    margin-top: 10px; /* Space between the game frame and button */
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 0px;
+}
