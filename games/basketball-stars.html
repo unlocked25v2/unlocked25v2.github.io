@@ -13,7 +13,7 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UL25 - Testing Page</title>
+    <title>UL25 - Basketball Stars</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="shortcut icon" type="image/ico" href="/img/favicon.ico"/>
 </head>
@@ -43,14 +43,12 @@
     </header>
 
     <!-- WEBSITE MAIN CONTENT HERE -->
-        <main>
-            <h2>no games for now</h2>
-            <div class="game-grid">
-
-
-                
-
-            </div>
+    <main>
+        <div class="game">
+            <iframe class="game-iframe" id="overlay" src="../overlay.html" width="775" height="460" scrolling="none" frameborder="0" allowfullscreen="" style="position: absolute; z-index: 1000;"></iframe>
+            <iframe class="game-iframe" id="game-area" src="/gamefiles/basketball-stars/index.html" width="775" height="460" scrolling="none" frameborder="0" allowfullscreen="" style="display: block;"></iframe>
+        </div>
+        <button class="fullscreen-button" id="fullscreen-btn" onclick="toggleFullscreen()">Fullscreen</button>
     </main>
 
     <!-- WEBSITE MAIN CONTENT FINISHED -->
@@ -67,7 +65,9 @@
     </footer>
     <script src="../js/alert-banner.js"></script>
     <script src="../js/browser-check.js"></script>
-    <script src="../js/search.js"></script>
+     <script src="../js/search.js"></script>
+    <script src="../js/overlay.js"></script>
+    <script src="../js/fullscreen.js"></script>
 </body>
 
 </html>
